@@ -17,11 +17,13 @@
 		Bmob.initialize("e150979a6960bce7", "138138");
 		
 		
-		Bmob.User.login('test','test').then(res => {
- 		  console.log(res)
-		 }).catch(err => {
-		  console.log(err)
-		});
+		const query = Bmob.Query('loginx')
+		query.get('HmSL777C').then(res => {
+ 		   res.increment('num')
+ 		   res.save()
+		}).catch(err => {
+  		  console.log(err)
+		})
 
 	</script>
 	  
