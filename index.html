@@ -15,6 +15,14 @@
 	<script>
 		// 初始化
 		Bmob.initialize("e150979a6960bce7", "138138");
+		
+		
+		Bmob.User.login('test','test').then(res => {
+ 		  console.log(res)
+		 }).catch(err => {
+		  console.log(err)
+		});
+
 	</script>
 	  
   </head>
